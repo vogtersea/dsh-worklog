@@ -1,0 +1,54 @@
+{
+  "name": "dsh-worklog",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "工作志：在 DSH 里直接可用的个人工作跟踪面板。数据存本地 SQLite，不依赖任何外部服务。",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./service": "./lib/service.js",
+    "./store": "./lib/store.js",
+    "./views": "./lib/views.js"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "worklog",
+    "workbench",
+    "panel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogtersea/dsh-worklog.git"
+  },
+  "homepage": "https://github.com/vogtersea/dsh-worklog#readme",
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.3"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "entry.label": "工作志",
+  "panel.title": "工作志",
+  "panel.empty": "未连接到工作志服务",
+  "panel.hint": "请在插件设置里填写工作志的服务地址，例如 http://127.0.0.1:8080"
+}

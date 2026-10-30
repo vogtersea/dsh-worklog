@@ -1,0 +1,6 @@
+{
+  "entry.label": "Worklog",
+  "panel.title": "Worklog",
+  "panel.empty": "Not connected to Worklog",
+  "panel.hint": "Set the Worklog service URL in the plugin settings, e.g. http://127.0.0.1:8080"
+}
